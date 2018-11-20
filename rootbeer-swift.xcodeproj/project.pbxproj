@@ -12,6 +12,11 @@
 		3BECF24A21A4692B004CAC97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BECF24821A4692B004CAC97 /* Main.storyboard */; };
 		3BECF24C21A4692C004CAC97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BECF24B21A4692C004CAC97 /* Assets.xcassets */; };
 		3BECF24F21A4692C004CAC97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BECF24D21A4692C004CAC97 /* LaunchScreen.storyboard */; };
+		3BECF25B21A47370004CAC97 /* BeersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BECF25A21A47370004CAC97 /* BeersTableViewCell.swift */; };
+		3BECF25E21A474F9004CAC97 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BECF25D21A474F9004CAC97 /* Beer.swift */; };
+		3BECF26021A475C5004CAC97 /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BECF25F21A475C5004CAC97 /* Ingredients.swift */; };
+		3BECF26221A47622004CAC97 /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BECF26121A47622004CAC97 /* Amount.swift */; };
+		3BECF26421A4770E004CAC97 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BECF26321A4770E004CAC97 /* Ingredient.swift */; };
 		3FCB63F1D9853EA316023254 /* Pods_rootbeer_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C283081806125FBCFD1FA1B /* Pods_rootbeer_swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +30,12 @@
 		3BECF24B21A4692C004CAC97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BECF24E21A4692C004CAC97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BECF25021A4692C004CAC97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BECF25921A47240004CAC97 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		3BECF25A21A47370004CAC97 /* BeersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersTableViewCell.swift; sourceTree = "<group>"; };
+		3BECF25D21A474F9004CAC97 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		3BECF25F21A475C5004CAC97 /* Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
+		3BECF26121A47622004CAC97 /* Amount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amount.swift; sourceTree = "<group>"; };
+		3BECF26321A4770E004CAC97 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		7C283081806125FBCFD1FA1B /* Pods_rootbeer_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rootbeer_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -43,6 +54,7 @@
 		3BECF23821A4692B004CAC97 = {
 			isa = PBXGroup;
 			children = (
+				3BECF25821A4723A004CAC97 /* fonts */,
 				3BECF24321A4692B004CAC97 /* rootbeer-swift */,
 				3BECF24221A4692B004CAC97 /* Products */,
 				74352C7FD702CB6D37CC8CDF /* Pods */,
@@ -61,14 +73,35 @@
 		3BECF24321A4692B004CAC97 /* rootbeer-swift */ = {
 			isa = PBXGroup;
 			children = (
+				3BECF25C21A474EB004CAC97 /* vos */,
 				3BECF24421A4692B004CAC97 /* AppDelegate.swift */,
 				3BECF24621A4692B004CAC97 /* ViewController.swift */,
 				3BECF24821A4692B004CAC97 /* Main.storyboard */,
 				3BECF24B21A4692C004CAC97 /* Assets.xcassets */,
 				3BECF24D21A4692C004CAC97 /* LaunchScreen.storyboard */,
 				3BECF25021A4692C004CAC97 /* Info.plist */,
+				3BECF25A21A47370004CAC97 /* BeersTableViewCell.swift */,
 			);
 			path = "rootbeer-swift";
+			sourceTree = "<group>";
+		};
+		3BECF25821A4723A004CAC97 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3BECF25921A47240004CAC97 /* Roboto-Regular.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		3BECF25C21A474EB004CAC97 /* vos */ = {
+			isa = PBXGroup;
+			children = (
+				3BECF25D21A474F9004CAC97 /* Beer.swift */,
+				3BECF25F21A475C5004CAC97 /* Ingredients.swift */,
+				3BECF26121A47622004CAC97 /* Amount.swift */,
+				3BECF26321A4770E004CAC97 /* Ingredient.swift */,
+			);
+			path = vos;
 			sourceTree = "<group>";
 		};
 		74352C7FD702CB6D37CC8CDF /* Pods */ = {
@@ -214,6 +247,11 @@
 			files = (
 				3BECF24721A4692B004CAC97 /* ViewController.swift in Sources */,
 				3BECF24521A4692B004CAC97 /* AppDelegate.swift in Sources */,
+				3BECF26421A4770E004CAC97 /* Ingredient.swift in Sources */,
+				3BECF26021A475C5004CAC97 /* Ingredients.swift in Sources */,
+				3BECF25B21A47370004CAC97 /* BeersTableViewCell.swift in Sources */,
+				3BECF25E21A474F9004CAC97 /* Beer.swift in Sources */,
+				3BECF26221A47622004CAC97 /* Amount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
